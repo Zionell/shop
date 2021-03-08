@@ -359,6 +359,14 @@
    .product:hover {
       box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
       transition: all 0.1s linear;
+      .stars::after {
+         content: "\2605\2605\2605\2605\2605";
+         color: #e4af48;
+         font-size: 20px;
+         line-height: 0px;
+         letter-spacing: -1px;
+         padding-left: 103px;
+      }
    }
 
    .more:hover {

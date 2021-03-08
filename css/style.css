@@ -1277,6 +1277,14 @@ h6 {
     -webkit-transition: all 0.1s linear;
     transition: all 0.1s linear;
   }
+  .product:hover .stars::after {
+    content: "\2605\2605\2605\2605\2605";
+    color: #e4af48;
+    font-size: 20px;
+    line-height: 0px;
+    letter-spacing: -1px;
+    padding-left: 103px;
+  }
   .more:hover {
     background: #fff;
     border: 1px solid #ff6a6a;
