@@ -175,13 +175,13 @@
       background: none;
       display: flex;
       align-items: center;
-      border: 1px solid #5f5d5d;
+      border: 1px solid #ef5b70;
       padding: 15px 205px;
       path {
-         fill: #5f5d5d;
+         fill: #ef5b70;
       }
       &-text {
-         color: #5f5d5d;
+         color: #ef5b70;
          font-family: $lato;
          font-size: 16px;
          font-weight: 700;
@@ -212,21 +212,22 @@
    }
 
    .filter {
-      &-choose-box:hover{
+      &-choose-box:hover {
          border: 1px solid $hover;
       }
-      &-choose-box:focus{
+      &-choose-box:focus {
          border: 1px solid $red;
       }
       &-button:hover {
          transition: all 0.2s linear;
          border: 1px solid #ef5b70;
+         background: #ef5b70;
          path {
-            fill: #ef5b70;
+            fill: $white;
             transition: all 0.2s linear;
          }
          .filter-button-text {
-            color: #ef5b70;
+            color: $white;
             transition: all 0.2s linear;
          }
       }

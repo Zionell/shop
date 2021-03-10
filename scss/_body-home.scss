@@ -150,27 +150,29 @@
          height: 100%;
          width: 100%;
       }
-      h3 {
+      .sale {
          position: absolute;
          top: 130px;
          left: 39px;
          color: $white;
          font-family: $lato;
-         font-size: 54px;
-         font-weight: 700;
-         text-transform: uppercase;
-         letter-spacing: 1.5px;
-         line-height: normal;
-      }
-      span {
-         color: $red;
-         letter-spacing: 1.5px;
-         line-height: normal;
-      }
-      p {
-         font-size: 32px;
-         letter-spacing: 0.9px;
-         line-height: normal;
+         h3 {
+            font-size: 54px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: normal;
+         }
+         span {
+            color: $red;
+            letter-spacing: 1.5px;
+            line-height: normal;
+         }
+         p {
+            font-size: 32px;
+            letter-spacing: 0.9px;
+            line-height: normal;
+         }
       }
    }
 }
@@ -357,6 +359,14 @@
    .product:hover {
       box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
       transition: all 0.1s linear;
+      .stars::after {
+         content: "\2605\2605\2605\2605\2605";
+         color: #e4af48;
+         font-size: 20px;
+         line-height: 0px;
+         letter-spacing: -1px;
+         padding-left: 103px;
+      }
    }
 
    .more:hover {
