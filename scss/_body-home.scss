@@ -105,12 +105,15 @@
    position: absolute;
    border: 1px solid $white;
    align-items: center;
-   padding: 7px 10px;
+   padding: 0 10px;
    cursor: pointer;
    color: $white;
    font-family: $lato;
    font-size: 13px;
    font-weight: 700;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    span{
       padding-left: 8px;
       line-height: 40px;
@@ -349,11 +352,12 @@
 @media (min-width: 768px) {
    .product:hover {
       .product_hover {
-         display: block;
+         display: flex;
+         align-items: center;
       }
       img {
-         filter: brightness(0.2);
-         transition: 0.2s linear;
+         filter: brightness(0.3);
+         transition: 0.1s linear;
       }
    }
 
@@ -377,15 +381,15 @@
       transition: 0.2s linear;
    }
 
-   .product_hover .addToCart:hover {
+   .product_hover:hover {
       border: 1px solid $red;
-      transition: 0.2s linear;
+      transition: 0.1s linear;
       span {
-         transition: 0.2s linear;
+         transition: 0.1s linear;
          color: $red;
       }
       path {
-         transition: 0.2s linear;
+         transition: 0.1s linear;
          fill: $red;
       }
    }

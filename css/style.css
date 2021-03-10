@@ -342,6 +342,10 @@ h6 {
   border: 1px solid #ff6a6a;
 }
 
+.fa-caret-down {
+  padding-left: 8px;
+}
+
 .nav {
   padding: 17px 0 18px;
   border-top: 1px solid #e8e8e8;
@@ -374,25 +378,17 @@ h6 {
   margin-right: 0;
 }
 
-.woman:hover .nav-bottom-wrapper-hover {
-  display: block;
-}
-
 .header__nav-bottom-wrapper::before {
   content: "";
   position: absolute;
-  border: 8px solid transparent;
-  border-bottom-color: #e8e8e8;
-  top: -16px;
-  left: 136px;
-}
-
-.header__nav-bottom-wrapper::after {
-  content: "";
-  position: absolute;
-  border: 8px solid transparent;
-  border-bottom-color: white;
-  top: -15px;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -5px;
   left: 136px;
 }
 
@@ -405,7 +401,7 @@ h6 {
   z-index: 2;
 }
 
-.women {
+.links {
   position: relative;
 }
 
@@ -760,7 +756,7 @@ h6 {
 
 /* media */
 @media (min-width: 768px) {
-  .women:hover .nav-bottom-wrapper-hover {
+  .links:hover .nav-bottom-wrapper-hover {
     display: block;
   }
   .open-menu details:hover {
@@ -939,12 +935,16 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 7px 10px;
+  padding: 0 10px;
   cursor: pointer;
   color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 13px;
   font-weight: 700;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .product_hover span {
@@ -1262,13 +1262,18 @@ h6 {
 /* media */
 @media (min-width: 768px) {
   .product:hover .product_hover {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .product:hover img {
-    -webkit-filter: brightness(0.2);
-            filter: brightness(0.2);
-    -webkit-transition: 0.2s linear;
-    transition: 0.2s linear;
+    -webkit-filter: brightness(0.3);
+            filter: brightness(0.3);
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
   }
   .product:hover {
     -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
@@ -1291,19 +1296,19 @@ h6 {
     -webkit-transition: 0.2s linear;
     transition: 0.2s linear;
   }
-  .product_hover .addToCart:hover {
+  .product_hover:hover {
     border: 1px solid #f16d7f;
-    -webkit-transition: 0.2s linear;
-    transition: 0.2s linear;
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
   }
-  .product_hover .addToCart:hover span {
-    -webkit-transition: 0.2s linear;
-    transition: 0.2s linear;
+  .product_hover:hover span {
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
     color: #f16d7f;
   }
-  .product_hover .addToCart:hover path {
-    -webkit-transition: 0.2s linear;
-    transition: 0.2s linear;
+  .product_hover:hover path {
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
     fill: #f16d7f;
   }
   .form input:hover {
