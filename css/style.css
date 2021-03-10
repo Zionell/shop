@@ -935,28 +935,21 @@ h6 {
 .product_hover {
   display: none;
   position: absolute;
-  background: rgba(58, 56, 56, 0.86);
-  padding: 98px 70px 144px;
-}
-
-.product_hover .addToCart {
   border: 1px solid #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 7px 10px;
   cursor: pointer;
-}
-
-.product_hover .addToCart p {
   color: #fff;
-  padding: 0 0 0 8px;
   font-family: "Lato", sans-serif;
   font-size: 13px;
   font-weight: 700;
+}
+
+.product_hover span {
+  padding-left: 8px;
+  line-height: 40px;
 }
 
 .more {
@@ -1271,6 +1264,12 @@ h6 {
   .product:hover .product_hover {
     display: block;
   }
+  .product:hover img {
+    -webkit-filter: brightness(0.2);
+            filter: brightness(0.2);
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
   .product:hover {
     -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
             box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
@@ -1294,11 +1293,17 @@ h6 {
   }
   .product_hover .addToCart:hover {
     border: 1px solid #f16d7f;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
   }
-  .product_hover .addToCart:hover p {
+  .product_hover .addToCart:hover span {
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
     color: #f16d7f;
   }
   .product_hover .addToCart:hover path {
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
     fill: #f16d7f;
   }
   .form input:hover {

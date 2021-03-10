@@ -103,22 +103,17 @@
 .product_hover {
    display: none;
    position: absolute;
-   background: rgba(58, 56, 56, 0.86);
-   padding: 98px 70px 144px;
-
-   .addToCart {
-      p {
-         color: $white;
-         padding: 0 0 0 8px;
-         font-family: $lato;
-         font-size: 13px;
-         font-weight: 700;
-      }
-      border: 1px solid $white;
-      display: flex;
-      align-items: center;
-      padding: 7px 10px;
-      cursor: pointer;
+   border: 1px solid $white;
+   align-items: center;
+   padding: 7px 10px;
+   cursor: pointer;
+   color: $white;
+   font-family: $lato;
+   font-size: 13px;
+   font-weight: 700;
+   span{
+      padding-left: 8px;
+      line-height: 40px;
    }
 }
 
@@ -352,8 +347,14 @@
 /* media */
 
 @media (min-width: 768px) {
-   .product:hover .product_hover {
-      display: block;
+   .product:hover {
+      .product_hover {
+         display: block;
+      }
+      img {
+         filter: brightness(0.2);
+         transition: 0.2s linear;
+      }
    }
 
    .product:hover {
@@ -378,10 +379,13 @@
 
    .product_hover .addToCart:hover {
       border: 1px solid $red;
-      p {
+      transition: 0.2s linear;
+      span {
+         transition: 0.2s linear;
          color: $red;
       }
       path {
+         transition: 0.2s linear;
          fill: $red;
       }
    }
