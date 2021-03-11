@@ -393,10 +393,8 @@ h6 {
 
 .nav-bottom-wrapper-hover {
   display: none;
-  position: fixed;
+  position: absolute;
   padding-top: 10px;
-  top: 14%;
-  left: 25%;
   z-index: 2;
 }
 
@@ -753,6 +751,11 @@ h6 {
   transition: 0.1s linear;
 }
 
+.man-mm {
+  top: 15px;
+  left: -90px;
+}
+
 .man-mm::before {
   content: "";
   position: absolute;
@@ -768,6 +771,11 @@ h6 {
   left: 100px;
 }
 
+.women-mm {
+  top: 15px;
+  left: -90px;
+}
+
 .women-mm::before {
   content: "";
   position: absolute;
@@ -780,7 +788,12 @@ h6 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 5px;
-  left: 190px;
+  left: 115px;
+}
+
+.kids-mm {
+  top: 15px;
+  left: -210px;
 }
 
 .kids-mm::before {
@@ -795,7 +808,12 @@ h6 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 5px;
-  left: 280px;
+  left: 220px;
+}
+
+.accoseriese-mm {
+  top: 15px;
+  right: -400px;
 }
 
 .accoseriese-mm::before {
@@ -813,6 +831,11 @@ h6 {
   left: 385px;
 }
 
+.featured-mm {
+  top: 15px;
+  right: -280px;
+}
+
 .featured-mm::before {
   content: "";
   position: absolute;
@@ -826,6 +849,11 @@ h6 {
           transform: rotate(45deg);
   top: 5px;
   left: 510px;
+}
+
+.deals-mm {
+  top: 15px;
+  right: -160px;
 }
 
 .deals-mm::before {
