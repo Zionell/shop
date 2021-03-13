@@ -158,6 +158,8 @@
       font-size: $ff;
       text-transform: uppercase;
       letter-spacing: 0.35px;
+      border-bottom: 1px solid#e8e8e8;
+      padding-bottom: 10px;
    }
    .category-items_title ::after {
       content: "";
@@ -218,7 +220,6 @@
       display: flex;
       justify-content: center;
       .links {
-         margin-right: 45px;
          .link {
             color: $grey;
             font-family: $lato;
@@ -226,7 +227,7 @@
             font-weight: 700;
             text-transform: uppercase;
             text-decoration: none;
-            padding-bottom: 18px;
+            padding: 0px 23px 18px;
          }
       }
       .links:last-child {
@@ -536,7 +537,7 @@
       z-index: 5;
       transform: rotate(45deg);
       top: 5px;
-      left: 100px;
+      left: 125px;
    }
 }
 .women-mm {
@@ -553,7 +554,7 @@
       z-index: 5;
       transform: rotate(45deg);
       top: 5px;
-      left: 115px;
+      left: 135px;
    }
 }
 .kids-mm {
@@ -570,7 +571,7 @@
       z-index: 5;
       transform: rotate(45deg);
       top: 5px;
-      left: 220px;
+      left: 245px;
    }
 }
 .accoseriese-mm {
@@ -587,7 +588,7 @@
       z-index: 5;
       transform: rotate(45deg);
       top: 5px;
-      left: 385px;
+      left: 360px;
    }
 }
 .featured-mm {
@@ -604,7 +605,7 @@
       z-index: 5;
       transform: rotate(45deg);
       top: 5px;
-      left: 510px;
+      left: 490px;
    }
 }
 .deals-mm {
@@ -621,7 +622,7 @@
       z-index: 5;
       transform: rotate(45deg);
       top: 5px;
-      left: 630px;
+      left: 610px;
    }
 }
 /* media */
