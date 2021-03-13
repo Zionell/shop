@@ -52,7 +52,7 @@
       input {
          color: #a4a4a4;
          font-family: $lato;
-         font-size: 14px;
+         font-size: $ff;
          font-weight: 300;
          line-height: 34px;
          letter-spacing: 0.35px;
@@ -64,7 +64,7 @@
       }
       button {
          color: #a4a4a4;
-         font-size: 14px;
+         font-size: $ff;
          background: none;
          padding: 9px 11px;
          border: 1px solid #e6e6e6;
@@ -132,7 +132,7 @@
       position: relative;
       font-family: "Lato";
       font-weight: 300;
-      font-size: 14px;
+      font-size: $ff;
       line-height: 34px;
       color: #222222;
       letter-spacing: 0.35px;
@@ -155,7 +155,7 @@
    .category-items_title {
       color: #232323;
       font-family: "Lato";
-      font-size: 14px;
+      font-size: $ff;
       text-transform: uppercase;
       letter-spacing: 0.35px;
    }
@@ -171,7 +171,7 @@
    .category_item a {
       color: #4f4f4f;
       font-family: "Lato";
-      font-size: 14px;
+      font-size: $ff;
       line-height: 28px;
       letter-spacing: 0.35px;
       text-transform: capitalize;
@@ -222,7 +222,7 @@
          .link {
             color: $grey;
             font-family: $lato;
-            font-size: 14px;
+            font-size: $ff;
             font-weight: 700;
             text-transform: uppercase;
             text-decoration: none;
@@ -284,7 +284,7 @@
       text-align: left;
       font-family: $lato;
       font-weight: 600;
-      font-size: 14px;
+      font-size: $ff;
       line-height: 32px;
       color: #232323;
       letter-spacing: 0.35px;
@@ -295,7 +295,7 @@
    &-items {
       a {
          font-family: $lato;
-         font-size: 14px;
+         font-size: $ff;
          line-height: 28px;
          color: #646464;
          letter-spacing: 0.35px;
@@ -483,7 +483,7 @@
             .payment-checkout {
                font-family: $lato;
                font-weight: 700;
-               font-size: 14px;
+               font-size: $ff;
                color: #4a4a4a;
                text-transform: uppercase;
                padding: 0;
@@ -495,7 +495,7 @@
             .payment-gotocart {
                font-family: $lato;
                font-weight: 700;
-               font-size: 14px;
+               font-size: $ff;
                color: #4a4a4a;
                text-transform: uppercase;
                padding: 0;
