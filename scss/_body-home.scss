@@ -102,7 +102,6 @@
 
 .product_hover {
    display: none;
-   position: absolute;
    border: 1px solid $white;
    align-items: center;
    padding: 0 10px;
@@ -111,10 +110,11 @@
    font-family: $lato;
    font-size: 13px;
    font-weight: 700;
+   position: absolute;
    top: 35%;
    left: 50%;
    transform: translate(-50%, -50%);
-   span{
+   span {
       padding-left: 8px;
       line-height: 40px;
    }
@@ -391,6 +391,7 @@
       path {
          transition: 0.1s linear;
          fill: $red;
+         stroke: $red;
       }
    }
 

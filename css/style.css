@@ -1,7 +1,17 @@
 @charset "UTF-8";
-/*Обнуление*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@font-face {
+  font-family: "Lato-Black";
+  src: url("https://nomail.com.ua/files/eot/9ff1710baadf935e7d7bc7c459fcabfe.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/9ff1710baadf935e7d7bc7c459fcabfe.woff") format("woff"), url("https://nomail.com.ua/files/woff2/9ff1710baadf935e7d7bc7c459fcabfe.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("https://nomail.com.ua/files/eot/84ed8ff4f8f7fa78ec9476e0b1449fe3.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/84ed8ff4f8f7fa78ec9476e0b1449fe3.woff") format("woff"), url("https://nomail.com.ua/files/woff2/84ed8ff4f8f7fa78ec9476e0b1449fe3.woff2") format("woff2");
+}
+
+/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -1033,7 +1043,6 @@ h6 {
 
 .product_hover {
   display: none;
-  position: absolute;
   border: 1px solid #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1044,6 +1053,7 @@ h6 {
   font-family: "Lato", sans-serif;
   font-size: 13px;
   font-weight: 700;
+  position: absolute;
   top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1413,6 +1423,7 @@ h6 {
     -webkit-transition: 0.1s linear;
     transition: 0.1s linear;
     fill: #f16d7f;
+    stroke: #f16d7f;
   }
   .form input:hover {
     border: 1px solid #979696;
@@ -1873,7 +1884,7 @@ h6 {
   height: 6px;
   border-radius: 3px;
   background-color: #f16d7f;
-  margin: 15px;
+  margin-bottom: 15px;
 }
 
 .product-content-filter-range_rail-left {
@@ -1965,6 +1976,27 @@ h6 {
   appearance: none;
   background: url(../img/product/arrow.png) 90% 50% no-repeat, #fff;
   background-size: 10px;
+}
+
+.product_hover__br {
+  border-radius: 3px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product_hover__br1 {
+  -webkit-transform: translate(-106%, 70%);
+          transform: translate(-106%, 70%);
+  width: 57px;
+  height: 38px;
+}
+
+.product_hover__br2 {
+  width: 57px;
+  height: 38px;
+  -webkit-transform: translate(5%, 70%);
+          transform: translate(5%, 70%);
 }
 
 .products-pagination {
@@ -2102,6 +2134,130 @@ h6 {
   }
 }
 
+.cart-block {
+  padding: 90px 0 60px;
+}
+
+.cart-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(90px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0 25px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.cart-row:last-of-type {
+  border-bottom: none;
+}
+
+.cart-grid1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.cart-grid2 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5/6;
+}
+
+.cart-grid3 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6/7;
+}
+
+.cart-grid4 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-column: 7/8;
+}
+
+.cart-grid5 {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 1;
+  grid-column: 8/9;
+}
+
+.cart-grid6 {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 1;
+  grid-column: 9/10;
+}
+
+.cart-position {
+  text-align: center;
+}
+
+.cart-columnTitle {
+  color: #222222;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+}
+
+.cart-product {
+  position: relative;
+}
+
+.cart-product_img {
+  position: absolute;
+}
+
+.cart-product_header {
+  color: #222222;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-left: 120px;
+  padding-top: 13px;
+  padding-bottom: 38px;
+}
+
+.cart-product-options {
+  color: #5a5a5a;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 120px;
+}
+
+.cart-product-options_span {
+  color: #6f6e6e;
+  font-family: "Lato-Light";
+  font-weight: 300;
+}
+
+.cart-quantity_input {
+  width: 54px;
+  height: 30px;
+  border: 1px solid #eaeaea;
+}
+
+.cart-price, .cart-quantity, .cart-ship, .cart-subtotal, .cart-remove {
+  color: #656565;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* media */
+@media (min-width: 768px) {
+  .cart-row_hover:hover {
+    -webkit-box-shadow: 0 0 5px #ffafba;
+            box-shadow: 0 0 5px #ffafba;
+  }
+}
+
 /* footer */
 .footer_wrapper {
   padding: 110px 0 95px;
@@ -2207,14 +2363,4 @@ h6 {
     -webkit-transition: 0.1s linear;
     transition: 0.1s linear;
   }
-}
-
-@font-face {
-  font-family: "Lato-Black";
-  src: url("https://nomail.com.ua/files/eot/9ff1710baadf935e7d7bc7c459fcabfe.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/9ff1710baadf935e7d7bc7c459fcabfe.woff") format("woff"), url("https://nomail.com.ua/files/woff2/9ff1710baadf935e7d7bc7c459fcabfe.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Lato-Light";
-  src: url("https://nomail.com.ua/files/eot/84ed8ff4f8f7fa78ec9476e0b1449fe3.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/84ed8ff4f8f7fa78ec9476e0b1449fe3.woff") format("woff"), url("https://nomail.com.ua/files/woff2/84ed8ff4f8f7fa78ec9476e0b1449fe3.woff2") format("woff2");
 }
