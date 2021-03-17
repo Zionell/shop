@@ -2238,9 +2238,15 @@ h6 {
 }
 
 .cart-quantity_input {
+  padding: 5px;
+  text-align: center;
   width: 54px;
   height: 30px;
   border: 1px solid #eaeaea;
+}
+
+.cart-remove {
+  cursor: pointer;
 }
 
 .cart-price, .cart-quantity, .cart-ship, .cart-subtotal, .cart-remove {
@@ -2250,11 +2256,180 @@ h6 {
   line-height: 20px;
 }
 
+.cart-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 45px;
+}
+
+.cart-button-clear, .cart-button-continue {
+  padding: 0 38px 0;
+  color: #4a4a4a;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.orderInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.orderInfo-title {
+  color: #222222;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.orderInfo-title--span {
+  color: #f16d7f;
+}
+
+.orderInfo-title__pd {
+  padding: 15px 0 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.orderInfo-title__pl {
+  padding-left: 18px;
+}
+
+.orderInfo-subTitle {
+  color: #4a4a4a;
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.orderInfo-text {
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 28px;
+}
+
+.orderInfo-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.orderInfo-form_item {
+  color: #b1b1b1;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: capitalize;
+  border: 1px solid #eaeaea;
+  width: 355px;
+  padding: 16px 1px 16px 18px;
+  margin-top: 20px;
+}
+
+.orderInfo-form_item::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+
+.orderInfo-form_item:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+.orderInfo-form_item::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+.orderInfo-form_item::placeholder {
+  color: #b1b1b1;
+}
+
+.orderInfo-form_button {
+  color: #4a4a4a;
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 13px;
+  margin-top: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  max-width: 115px;
+}
+
+.orderInfo-total {
+  text-align: right;
+  padding: 40px;
+  background-color: #f5f3f3;
+  max-height: 214px;
+}
+
+.orderInfo-total-button {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 41px;
+  background-color: #f16d7f;
+  border: 1px solid #f16d7f;
+}
+
 /* media */
 @media (min-width: 768px) {
-  .cart-row_hover:hover {
+  .cart-row_hover:hover,
+  .orderInfo-form_item:hover {
     -webkit-box-shadow: 0 0 5px #ffafba;
             box-shadow: 0 0 5px #ffafba;
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
+  }
+  .orderInfo-form_item:focus {
+    -webkit-box-shadow: 0 0 5px #ffafba;
+            box-shadow: 0 0 5px #ffafba;
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
+  }
+  .cart-button-clear:hover,
+  .cart-button-continue:hover,
+  .orderInfo-form_button:hover {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    color: #fff;
+    border: 1px solid #f16d7f;
+    background: #f16d7f;
+  }
+  .orderInfo-total-button:hover {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    color: #f16d7f;
+    border: 1px solid #f16d7f;
+    background: #fff;
   }
 }
 
@@ -2278,7 +2453,7 @@ h6 {
   padding-bottom: 27px;
 }
 
-.footer_wrapper a {
+.footer_wrapper-nav {
   display: block;
   color: #898989;
   font-family: "Lato", sans-serif;
