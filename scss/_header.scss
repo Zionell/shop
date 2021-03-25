@@ -52,7 +52,7 @@
       input {
          color: #a4a4a4;
          font-family: $lato;
-         font-size: 14px;
+         font-size: $ff;
          font-weight: 300;
          line-height: 34px;
          letter-spacing: 0.35px;
@@ -64,7 +64,7 @@
       }
       button {
          color: #a4a4a4;
-         font-size: 14px;
+         font-size: $ff;
          background: none;
          padding: 9px 11px;
          border: 1px solid #e6e6e6;
@@ -132,7 +132,7 @@
       position: relative;
       font-family: "Lato";
       font-weight: 300;
-      font-size: 14px;
+      font-size: $ff;
       line-height: 34px;
       color: #222222;
       letter-spacing: 0.35px;
@@ -155,9 +155,11 @@
    .category-items_title {
       color: #232323;
       font-family: "Lato";
-      font-size: 14px;
+      font-size: $ff;
       text-transform: uppercase;
       letter-spacing: 0.35px;
+      border-bottom: 1px solid#e8e8e8;
+      padding-bottom: 10px;
    }
    .category-items_title ::after {
       content: "";
@@ -171,7 +173,7 @@
    .category_item a {
       color: #4f4f4f;
       font-family: "Lato";
-      font-size: 14px;
+      font-size: $ff;
       line-height: 28px;
       letter-spacing: 0.35px;
       text-transform: capitalize;
@@ -207,6 +209,10 @@
    }
 }
 
+.fa-caret-down {
+   padding-left: 8px;
+}
+
 .nav {
    padding: 17px 0 18px;
    border-top: 1px solid #e8e8e8;
@@ -214,15 +220,14 @@
       display: flex;
       justify-content: center;
       .links {
-         margin-right: 45px;
          .link {
             color: $grey;
             font-family: $lato;
-            font-size: 14px;
+            font-size: $ff;
             font-weight: 700;
             text-transform: uppercase;
             text-decoration: none;
-            padding-bottom: 18px;
+            padding: 0px 23px 18px;
          }
       }
       .links:last-child {
@@ -231,39 +236,14 @@
    }
 }
 
-.woman:hover .nav-bottom-wrapper-hover {
-   display: block;
-}
-
-.header__nav-bottom-wrapper {
-   &::before {
-      content: "";
-      position: absolute;
-      border: 8px solid transparent;
-      border-bottom-color: #e8e8e8;
-      top: -16px;
-      left: 136px;
-   }
-   &::after {
-      content: "";
-      position: absolute;
-      border: 8px solid transparent;
-      border-bottom-color: white;
-      top: -15px;
-      left: 136px;
-   }
-}
-
 .nav-bottom-wrapper-hover {
    display: none;
    position: absolute;
    padding-top: 10px;
-   top: 15px;
-   left: -116px;
    z-index: 2;
 }
 
-.women {
+.links {
    position: relative;
 }
 
@@ -272,7 +252,7 @@
    column-gap: 46px;
    row-gap: 0;
    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr) minmax(220px, 1fr) minmax(255px, 1fr));
-   grid-template-rows: 168px;
+   grid-template-rows: 1fr;
    padding: 21px 21px 19px 25px;
    max-width: 850px;
    background-color: white;
@@ -305,7 +285,7 @@
       text-align: left;
       font-family: $lato;
       font-weight: 600;
-      font-size: 14px;
+      font-size: $ff;
       line-height: 32px;
       color: #232323;
       letter-spacing: 0.35px;
@@ -316,7 +296,7 @@
    &-items {
       a {
          font-family: $lato;
-         font-size: 14px;
+         font-size: $ff;
          line-height: 28px;
          color: #646464;
          letter-spacing: 0.35px;
@@ -504,7 +484,7 @@
             .payment-checkout {
                font-family: $lato;
                font-weight: 700;
-               font-size: 14px;
+               font-size: $ff;
                color: #4a4a4a;
                text-transform: uppercase;
                padding: 0;
@@ -516,7 +496,7 @@
             .payment-gotocart {
                font-family: $lato;
                font-weight: 700;
-               font-size: 14px;
+               font-size: $ff;
                color: #4a4a4a;
                text-transform: uppercase;
                padding: 0;
@@ -543,11 +523,112 @@
       }
    }
 }
-
+.man-mm {
+   top: 15px;
+   left: -90px;
+   &::before {
+      content: "";
+      position: absolute;
+      border-left: 1px solid #e8e8e8;
+      border-top: 1px solid #e8e8e8;
+      background: $white;
+      width: 10px;
+      height: 10px;
+      z-index: 5;
+      transform: rotate(45deg);
+      top: 5px;
+      left: 125px;
+   }
+}
+.women-mm {
+   top: 15px;
+   left: -90px;
+   &::before {
+      content: "";
+      position: absolute;
+      border-left: 1px solid #e8e8e8;
+      border-top: 1px solid #e8e8e8;
+      background: $white;
+      width: 10px;
+      height: 10px;
+      z-index: 5;
+      transform: rotate(45deg);
+      top: 5px;
+      left: 135px;
+   }
+}
+.kids-mm {
+   top: 15px;
+   left: -210px;
+   &::before {
+      content: "";
+      position: absolute;
+      border-left: 1px solid #e8e8e8;
+      border-top: 1px solid #e8e8e8;
+      background: $white;
+      width: 10px;
+      height: 10px;
+      z-index: 5;
+      transform: rotate(45deg);
+      top: 5px;
+      left: 245px;
+   }
+}
+.accoseriese-mm {
+   top: 15px;
+   right: -400px;
+   &::before {
+      content: "";
+      position: absolute;
+      border-left: 1px solid #e8e8e8;
+      border-top: 1px solid #e8e8e8;
+      background: $white;
+      width: 10px;
+      height: 10px;
+      z-index: 5;
+      transform: rotate(45deg);
+      top: 5px;
+      left: 360px;
+   }
+}
+.featured-mm {
+   top: 15px;
+   right: -280px;
+   &::before {
+      content: "";
+      position: absolute;
+      border-left: 1px solid #e8e8e8;
+      border-top: 1px solid #e8e8e8;
+      background: $white;
+      width: 10px;
+      height: 10px;
+      z-index: 5;
+      transform: rotate(45deg);
+      top: 5px;
+      left: 490px;
+   }
+}
+.deals-mm {
+   top: 15px;
+   right: -160px;
+   &::before {
+      content: "";
+      position: absolute;
+      border-left: 1px solid #e8e8e8;
+      border-top: 1px solid #e8e8e8;
+      background: $white;
+      width: 10px;
+      height: 10px;
+      z-index: 5;
+      transform: rotate(45deg);
+      top: 5px;
+      left: 610px;
+   }
+}
 /* media */
 
 @media (min-width: 768px) {
-   .women:hover .nav-bottom-wrapper-hover {
+   .links:hover .nav-bottom-wrapper-hover {
       display: block;
    }
 

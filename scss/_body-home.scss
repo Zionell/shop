@@ -57,7 +57,7 @@
 .products-text {
    color: #9f9f9f;
    font-family: $lato;
-   font-size: 14px;
+   font-size: $ff;
    line-height: 40px;
    letter-spacing: 0.35px;
 }
@@ -102,23 +102,21 @@
 
 .product_hover {
    display: none;
+   border: 1px solid $white;
+   align-items: center;
+   padding: 0 10px;
+   cursor: pointer;
+   color: $white;
+   font-family: $lato;
+   font-size: 13px;
+   font-weight: 700;
    position: absolute;
-   background: rgba(58, 56, 56, 0.86);
-   padding: 98px 70px 144px;
-
-   .addToCart {
-      p {
-         color: $white;
-         padding: 0 0 0 8px;
-         font-family: $lato;
-         font-size: 13px;
-         font-weight: 700;
-      }
-      border: 1px solid $white;
-      display: flex;
-      align-items: center;
-      padding: 7px 10px;
-      cursor: pointer;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   span {
+      padding-left: 8px;
+      line-height: 40px;
    }
 }
 
@@ -197,7 +195,7 @@
    svg {
       position: absolute;
    }
-   div {
+   &-text {
       padding-left: 78px;
       h3 {
          padding: 5px 0 11px;
@@ -211,7 +209,7 @@
       p {
          color: #fbfbfb;
          font-family: $lato;
-         font-size: 14px;
+         font-size: $ff;
          font-weight: 300;
          letter-spacing: 0.35px;
          line-height: 23px;
@@ -312,7 +310,7 @@
       text-transform: uppercase;
    }
    p {
-      font-size: 14px;
+      font-size: $ff;
       padding-bottom: 25px;
       letter-spacing: 0.35px;
       line-height: 24px;
@@ -331,7 +329,7 @@
          opacity: 0.67;
          color: #222224;
          font-family: $lato;
-         font-size: 14px;
+         font-size: $ff;
          font-weight: 400;
          line-height: 54px;
          letter-spacing: 0.35px;
@@ -344,7 +342,7 @@
       background: $red;
       border-radius: 0 23px 23px 0;
       font-family: $lato;
-      font-size: 14px;
+      font-size: $ff;
       letter-spacing: 0.35px;
    }
 }
@@ -352,8 +350,15 @@
 /* media */
 
 @media (min-width: 768px) {
-   .product:hover .product_hover {
-      display: block;
+   .product:hover {
+      .product_hover {
+         display: flex;
+         align-items: center;
+      }
+      img {
+         filter: brightness(0.3);
+         transition: 0.1s linear;
+      }
    }
 
    .product:hover {
@@ -376,13 +381,17 @@
       transition: 0.2s linear;
    }
 
-   .product_hover .addToCart:hover {
+   .product_hover:hover {
       border: 1px solid $red;
-      p {
+      transition: 0.1s linear;
+      span {
+         transition: 0.1s linear;
          color: $red;
       }
       path {
+         transition: 0.1s linear;
          fill: $red;
+         stroke: $red;
       }
    }
 

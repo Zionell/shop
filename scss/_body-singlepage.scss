@@ -1,6 +1,6 @@
 .arrivals {
    background-color: #f8f3f4;
-   padding: 65px 0;
+   padding: 60px 0;
    &-wrapper {
       display: flex;
       justify-content: space-between;
@@ -41,7 +41,7 @@
       .arrow {
          background-color: #d8d8d8;
          color: $white;
-         font-size: 14px;
+         font-size: $ff;
          line-height: 24px;
          cursor: pointer;
       }
@@ -72,7 +72,7 @@
    &-category {
       color: $red;
       font-family: $lato;
-      font-size: 14px;
+      font-size: $ff;
       font-weight: 700;
       line-height: 24px;
       text-transform: uppercase;
@@ -105,7 +105,7 @@
    &-description {
       color: #5e5e5e;
       font-family: $lato;
-      font-size: 14px;
+      font-size: $ff;
       font-weight: 300;
       line-height: 24px;
       text-align: center;
@@ -116,7 +116,7 @@
       justify-content: center;
       color: #b9b9b9;
       font-family: $lato;
-      font-size: 14px;
+      font-size: $ff;
       font-weight: 700;
       line-height: 24px;
       text-transform: uppercase;
@@ -152,7 +152,7 @@
       &_title {
          color: #2f2f2f;
          font-family: $lato;
-         font-size: 14px;
+         font-size: $ff;
          font-weight: 700;
          line-height: 24px;
          text-transform: uppercase;

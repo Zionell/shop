@@ -1,14 +1,7 @@
-@import "_nullstyle";
-@import "_variebles";
-@import "_header";
-@import "body-home";
-@import "body-singlepage";
-@import "_footer";
-// Шрифты
+// Fonts
 
 @font-face {
    font-family: "Lato-Black";
-
    src: url("https://nomail.com.ua/files/eot/9ff1710baadf935e7d7bc7c459fcabfe.eot?#iefix") format("embedded-opentype"),
       url("https://nomail.com.ua/files/woff/9ff1710baadf935e7d7bc7c459fcabfe.woff") format("woff"),
       url("https://nomail.com.ua/files/woff2/9ff1710baadf935e7d7bc7c459fcabfe.woff2") format("woff2");
@@ -16,10 +9,21 @@
 
 @font-face {
    font-family: "Lato-Light";
-
    src: url("https://nomail.com.ua/files/eot/84ed8ff4f8f7fa78ec9476e0b1449fe3.eot?#iefix") format("embedded-opentype"),
       url("https://nomail.com.ua/files/woff/84ed8ff4f8f7fa78ec9476e0b1449fe3.woff") format("woff"),
       url("https://nomail.com.ua/files/woff2/84ed8ff4f8f7fa78ec9476e0b1449fe3.woff2") format("woff2");
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+// Files
+@import "_nullstyle";
+@import "_variebles";
+@import "_header";
+@import "_body-home";
+@import "_body-singlepage";
+@import "_body-product";
+@import "_body-shopping";
+@import "_body-checkout";
+@import "_footer";
